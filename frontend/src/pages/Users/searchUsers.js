@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 //import axios from 'axios';
+import Nav from '../../components/Navbar/userNav';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer/userFooter';
+
 
 const UserSearchScreen = () => {
   const [interest, setInterest] = useState('');
@@ -45,6 +49,8 @@ const UserSearchScreen = () => {
 
   return (
     <div>
+      <Header />
+      <Nav />
       <h3>Search Users</h3>
       <div>
         <label>
@@ -76,6 +82,7 @@ const UserSearchScreen = () => {
           <p>No users found</p>
         )}
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,9 +1,10 @@
 
+
 import './App.css';
 import {Routes, Route} from 'react-router-dom'
 import AdminHomepage from './pages/Homepage/adminHomepage';
-import InitialHomepage from './pages/Homepage/initialHomepage';
 import UserHomepage from './pages/Homepage/userHomepage';
+import InitialHomepage from './pages/Homepage/initialHomepage';
 import SearchUsers from './pages/Users/searchUsers';
 import UpdateProfile from './pages/Users/UpdateProfile';
 
@@ -11,6 +12,9 @@ import SearchLocations from './pages/Location/SearchLocation';
 import ManageLocations from './pages/Location/ManageLocation';
 import UserLocation from './pages/Location/UserLocation';
 import ViewLocations from './pages/Location/viewLocations';
+import GetAPILocations from './pages/Location/locationsAPI';
+import UpdateLocations from './pages/Location/UpdateLocations';
+import DeleteLocations from './pages/Location/DeleteLocations';
 
 import SearchTransport from './pages/Transportation/SearchTransportation';
 import ManageTransportation from './pages/Transportation/ManageTransportation';
@@ -20,6 +24,9 @@ import SearchAccommodation from './pages/Accommodation/SearchAccommodation';
 import ManageAccommodation from './pages/Accommodation/ManageAccommodation';
 import UserAccommodation from './pages/Accommodation/UserAccommodation';
 import ViewAccommodations from './pages/Accommodation/ViewAccommodation';
+import CreateAccommodations from './pages/Accommodation/CreateAccommodations';
+import UpdateAccommodations from './pages/Accommodation/UpdateAccommodations';
+import DeleteAccommodation from './pages/Accommodation/DeleteAccommodations';
 
 import SearchActivities from './pages/Activities/SearchActivities';
 import ManageActivities from './pages/Activities/ManageActivities';
@@ -29,10 +36,15 @@ import ViewActivities from './pages/Activities/ViewActivities';
 import SearchBooking from './pages/Booking/searchBookings';
 import ManageBooking from './pages/Booking/ManageBookings';
 import UserBooking from './pages/Booking/UserBookings';
+import ViewBookings from './pages/Booking/ViewBookings';
+import CreateBookings from './pages/Booking/CreateBooking';
+import UpdateBookings from './pages/Booking/UpdateBooking';
+import DeleteBookings from './pages/Booking/DeleteBooking';
 
 import SearchPlan from './pages/Plans/searchPlans';
 import ManagePlans from './pages/Plans/ManagePlans';
 import UserPlans from './pages/Plans/UserPlans';
+import ViewAllPlans from './pages/Plans/viewPlans';
 
 
 import Signup from './components/Signup/Signup.js';
@@ -41,10 +53,9 @@ import Login from './components/Login/Login.js';
 import SearchReviews from './pages/Reviews/SearchReviews';
 import ManageReview from './pages/Reviews/ManageReviews';
 import UserReviews from './pages/Reviews/UserReviews';
+import ViewReviews from './pages/Reviews/getAllReviews';
 
 import React from 'react'
-
-
 
 
 function App() {
@@ -62,6 +73,9 @@ function App() {
         <Route path="/manageLocations" element={<ManageLocations/>}/>
         <Route path="/Locations" element={<UserLocation/>}/>
         <Route path="/viewLocations" element={<ViewLocations/>}/>
+        <Route path="/getAPILocations" element={<GetAPILocations/>}/>
+        <Route path="/updateLocations" element={<UpdateLocations/>}/>
+        <Route path="/deleteLocations" element={<DeleteLocations/>}/>
 
         <Route path="/searchTransport" element={<SearchTransport/>}/>
         <Route path="/manageTransport" element={<ManageTransportation/>}/>
@@ -71,6 +85,9 @@ function App() {
         <Route path="/manageAccommodations" element={<ManageAccommodation/>}/>
         <Route path="/Accommodation" element={<UserAccommodation/>}/>
         <Route path="/viewAccommodations" element={<ViewAccommodations/>}/>
+        <Route path="/addAccommodation" element={<CreateAccommodations/>}/>
+        <Route path="/updateAccommodation" element={<UpdateAccommodations/>}/>
+        <Route path="/deleteAccommodation" element={<DeleteAccommodation/>}/>
 
         <Route path="/searchActivities" element={<SearchActivities/>}/>
         <Route path="/manageActivities" element={<ManageActivities/>}/>
@@ -80,18 +97,25 @@ function App() {
         <Route path="/searchBooking" element={<SearchBooking/>}/>
         <Route path="/manageBookings" element={<ManageBooking/>}/>
         <Route path="/Bookings" element={<UserBooking/>}/>
+        <Route path="/viewBookings" element={<ViewBookings/>}/>
+        <Route path="/addBooking" element={<CreateBookings/>}/>
+        <Route path="/updateBooking" element={<UpdateBookings/>}/>
+        <Route path="/deleteBooking" element={<DeleteBookings/>}/>
 
         <Route path="/searchPlans" element={<SearchPlan/>}/>
         <Route path="/managePlans" element={<ManagePlans/>}/>
         <Route path="/Plans" element={<UserPlans/>}/>
+        <Route path="/viewPlans" element={<ViewAllPlans/>}/>
+      
 
         <Route path="/searchReviews" element={<SearchReviews/>}/>
         <Route path="/manageReviews" element={<ManageReview/>}/>
         <Route path="/Reviews" element={<UserReviews/>}/>
-
+        <Route path="/viewReviews" element={<ViewReviews/>}/>
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/Login" element={<Login/>}/>
         
+
 
       </Routes>
     </div>

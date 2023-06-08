@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 //import axios from 'axios';
+import Nav from '../../components/Navbar/userNav';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer/userFooter';
+
 
 const ReviewsSearchScreen = () => {
   const [reviewType, setReviewType] = useState('');
@@ -27,6 +31,8 @@ const ReviewsSearchScreen = () => {
 
   return (
     <div>
+      <Header />
+      <Nav />
       <h3>Search Reviews</h3>
       <div>
         <label>
@@ -53,6 +59,7 @@ const ReviewsSearchScreen = () => {
           <p>No reviews found</p>
         )}
       </div>
+      <Footer />
     </div>
   );
 };

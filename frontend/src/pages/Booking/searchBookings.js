@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 //import axios from 'axios';
+import Nav from '../../components/Navbar/userNav';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer/userFooter';
 
 const BookingSearchScreen = () => {
   const [bookingType, setBookingType] = useState('');
@@ -46,6 +49,8 @@ const BookingSearchScreen = () => {
 
   return (
     <div>
+      <Header />
+      <Nav />
       <h3>Search Bookings</h3>
       <div>
         <label>
@@ -79,6 +84,7 @@ const BookingSearchScreen = () => {
           <p>No Booking found</p>
         )}
       </div>
+      <Footer />
     </div>
   );
 };

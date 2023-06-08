@@ -188,12 +188,12 @@ userRouter.delete('/deleteActivity', deleteActivityByName, (req,res,next)=>{
 
 //booking controller
 //create booking
-userRouter.post('/CreateBooking', verifyUserLoggedIn, createBooking, (req,res,next)=>{
+userRouter.post('/CreateBooking', createBooking, (req,res,next)=>{
     res.status(201).send({"Message":"Create Booking"})
 })
 
 //view all bookings
-userRouter.get('/viewAllBookings', verifyUserLoggedIn, getAllBookings, (req,res,next)=>{
+userRouter.get('/viewAllBookings', getAllBookings, (req,res,next)=>{
     res.status(201).send({"Message":"View All Bookings"})
 })
 
@@ -208,31 +208,30 @@ userRouter.get('/viewBookingByStatus', getBookingByStatus, (req,res,next)=>{
 })
 
 //update booking by type
-userRouter.put('/updateBookingByType', verifyUserLoggedIn, updateBookingByType, (req,res,next)=>{
+userRouter.put('/updateBookingByType', updateBookingByType, (req,res,next)=>{
     res.status(201).send({"Message":"Update booking by type"})
 })
 
 //delete booking by type
-userRouter.delete('/deleteBookingByType', verifyUserLoggedIn, deleteBookingByType, (req,res,next)=>{
+userRouter.delete('/deleteBookingByType', deleteBookingByType, (req,res,next)=>{
     res.status(201).send({"Message":"Delete booking by type"})
 })
 
 //confirm bookimg through payement
-userRouter.put('/confirmBooking', verifyUserLoggedIn, confirmBooking, (req,res,next)=>{
+userRouter.put('/confirmBooking', confirmBooking, (req,res,next)=>{
     res.status(201).send({"Message":"Confirm Booking"})
 })
-
 
 //plans routes
 
 
 //create plan
-userRouter.post('/CreatePlan', verifyUserLoggedIn, createPlan, (req,res,next)=>{
+userRouter.post('/CreatePlan', createPlan, (req,res,next)=>{
     res.status(201).send({"Message":"Create Plan"})
 })
 
 //view all plans
-userRouter.get('/viewAllPlans', verifyUserLoggedIn, getAllPlans, (req,res,next)=>{
+userRouter.get('/viewAllPlans',  getAllPlans, (req,res,next)=>{
     res.status(201).send({"Message":"View All Plans"})
 })
 
@@ -242,17 +241,17 @@ userRouter.get('/viewPlanByStatus', getPlanByStatus, (req,res,next)=>{
 })
 
 //update plan by status
-userRouter.put('/updatePlanByStatus', verifyUserLoggedIn, updatePlanByStatus, (req,res,next)=>{
+userRouter.put('/updatePlanByStatus',  updatePlanByStatus, (req,res,next)=>{
     res.status(201).send({"Message":"Update Plan By Status"})
 })
 
 //delete plan by status
-userRouter.delete('/deletePlanByStatus', verifyUserLoggedIn, deletePlanByStatus, (req,res,next)=>{
+userRouter.delete('/deletePlanByStatus',  deletePlanByStatus, (req,res,next)=>{
     res.status(201).send({"Message":"Delete Plan By Status"})
 })
 
 //confirm plan through payement
-userRouter.put('/confirmPlan', verifyUserLoggedIn, confirmPlan, (req,res,next)=>{
+userRouter.put('/confirmPlan',  confirmPlan, (req,res,next)=>{
     res.status(201).send({"Message":"Confirm Plan"})
 })
 
@@ -262,12 +261,12 @@ userRouter.put('/confirmPlan', verifyUserLoggedIn, confirmPlan, (req,res,next)=>
 //review routes
 
 //create review
-userRouter.post('/CreateReview', verifyUserLoggedIn, createReview, (req,res,next)=>{
+userRouter.post('/CreateReview',  createReview, (req,res,next)=>{
     res.status(201).send({"Message":"Create Review"})
 })
 
 //view all reviews
-userRouter.get('/viewAllReviews', verifyUserLoggedIn, getAllReviews, (req,res,next)=>{
+userRouter.get('/viewAllReviews',  getAllReviews, (req,res,next)=>{
     res.status(201).send({"Message":"View All Reviews"})
 })
 

@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import Nav from '../../components/Navbar/userNav';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer/userFooter';
+
 
 const LocationList = () => {
   const [locations, setLocations] = useState([]);
@@ -21,6 +25,8 @@ const LocationList = () => {
 
   return (
     <div>
+        <Header />
+        <Nav />
       <h3>Location List</h3>
       {error ? (
         <p>{error}</p>
@@ -36,6 +42,7 @@ const LocationList = () => {
           ))}
         </ul>
       )}
+      <Footer />
     </div>
   );
 };

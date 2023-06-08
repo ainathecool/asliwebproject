@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import Nav from '../../components/Navbar/userNav';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer/userFooter';
+
 
 const AccommodationList = () => {
   const [accommodations, setAccommodations] = useState([]);
@@ -21,6 +25,9 @@ const AccommodationList = () => {
 
   return (
     <div>
+
+        <Header />
+        <Nav />
       <h3>Accommodation List</h3>
       {error ? (
         <p>{error}</p>
@@ -40,6 +47,7 @@ const AccommodationList = () => {
           ))}
         </ul>
       )}
+      <Footer />
     </div>
   );
 };

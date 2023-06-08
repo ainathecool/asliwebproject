@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import Nav from '../../components/Navbar/userNav';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer/userFooter';
+
 
 const ActivityList = () => {
   const [activities, setActivities] = useState([]);
@@ -21,6 +25,8 @@ const ActivityList = () => {
 
   return (
     <div>
+        <Header />
+        <Nav />
       <h3>Activity List</h3>
       {error ? (
         <p>{error}</p>
@@ -37,6 +43,7 @@ const ActivityList = () => {
           ))}
         </ul>
       )}
+      <Footer />
     </div>
   );
 };

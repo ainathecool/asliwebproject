@@ -10,28 +10,28 @@ const AdminNavbar = () => {
     <nav className="admin-navbar">
       <ul className="admin-navbar__menu">
         <li className="admin-navbar__item">
-          <Link to="/admin/users" className="admin-navbar__link">Users</Link>
+          <Link to="/SearchUsers" className="admin-navbar__link">Users</Link>
         </li>
         <li className="admin-navbar__item">
-          <Link to="/admin/locations" className="admin-navbar__link">Locations</Link>
+          <Link to="/manageLocations" className="admin-navbar__link">Locations</Link>
         </li>
         <li className="admin-navbar__item">
-          <Link to="/admin/accommodations" className="admin-navbar__link">Accommodations</Link>
+          <Link to="/manageAccommodations" className="admin-navbar__link">Accommodations</Link>
         </li>
         <li className="admin-navbar__item">
-          <Link to="/admin/transportations" className="admin-navbar__link">Transportations</Link>
+          <Link to="/ManageTransport" className="admin-navbar__link">Transportations</Link>
         </li>
         <li className="admin-navbar__item">
-          <Link to="/admin/activities" className="admin-navbar__link">Activities</Link>
+          <Link to="/manageActivities" className="admin-navbar__link">Activities</Link>
         </li>
         <li className="admin-navbar__item">
-          <Link to="/admin/bookings" className="admin-navbar__link">Bookings</Link>
+          <Link to="/manageBookings" className="admin-navbar__link">Bookings</Link>
         </li>
         <li className="admin-navbar__item">
-          <Link to="/admin/plans" className="admin-navbar__link">Plans</Link>
+          <Link to="/managePlans" className="admin-navbar__link">Plans</Link>
         </li>
         <li className="admin-navbar__item">
-          <Link to="/admin/reviews" className="admin-navbar__link">Reviews</Link>
+          <Link to="/manageReviews" className="admin-navbar__link">Reviews</Link>
         </li>
         <li className="admin-navbar__item">
           <Link to="/admin/payments" className="admin-navbar__link">Payments</Link>

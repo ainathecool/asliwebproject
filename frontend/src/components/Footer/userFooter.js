@@ -14,28 +14,28 @@ const UserFooter = () => {
             <Link to="/profile">Manage Profile</Link>
           </li>
           <li>
-            <Link to="/locations">Explore Locations</Link>
+            <Link to="/Locations">Explore Locations</Link>
           </li>
           <li>
-            <Link to="/accommodations">Browse Accommodations</Link>
+            <Link to="/Accommodation">Browse Accommodations</Link>
           </li>
           <li>
-            <Link to="/transportations">Discover Transportations</Link>
+            <Link to="/Transportation">Discover Transportations</Link>
           </li>
           <li>
-            <Link to="/activities">Find Activities</Link>
+            <Link to="/Activities">Find Activities</Link>
           </li>
           <li>
-            <Link to="/bookings">Manage Bookings</Link>
+            <Link to="/Bookings">Manage Bookings</Link>
           </li>
           <li>
-            <Link to="/plans">View Plans</Link>
+            <Link to="/Plans">View Plans</Link>
           </li>
           <li>
             <Link to="/search">Search</Link>
           </li>
           <li>
-            <Link to="/reviews">Write Reviews</Link>
+            <Link to="/Reviews">Write Reviews</Link>
           </li>
         </ul>
       </nav>

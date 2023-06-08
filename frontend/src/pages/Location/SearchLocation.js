@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 //import axios from 'axios';
+import Nav from '../../components/Navbar/userNav';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer/userFooter';
+
 
 const LocationSearchScreen = () => {
   const [name, setName] = useState('');
@@ -27,6 +31,8 @@ const LocationSearchScreen = () => {
 
   return (
     <div>
+        <Header />
+        <Nav />
       <h3>Search Locations</h3>
       <div>
         <label>
@@ -53,6 +59,7 @@ const LocationSearchScreen = () => {
           <p>No locations found</p>
         )}
       </div>
+        <Footer />
     </div>
   );
 };

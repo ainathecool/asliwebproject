@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import Nav from '../../components/Navbar/userNav';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer/userFooter';
 
 const UpdateProfileScreen = () => {
   const [email, setEmail] = useState('');
@@ -54,6 +57,8 @@ const UpdateProfileScreen = () => {
 
   return (
     <div>
+      <Header />
+      <Nav />
       <h3>Update Profile</h3>
       <form onSubmit={handleFormSubmit}>
         <div>
@@ -81,6 +86,7 @@ const UpdateProfileScreen = () => {
         </div>
       </form>
       {message && <p>{message}</p>}
+      <Footer />
     </div>
   );
 };

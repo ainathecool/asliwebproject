@@ -12,28 +12,28 @@ const AdminFooter = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/admin/users">Manage Users</Link>
+            <Link to="/SearchUsers">Manage Users</Link>
           </li>
           <li>
-            <Link to="/admin/locations">Manage Locations</Link>
+            <Link to="/manageLocations">Manage Locations</Link>
           </li>
           <li>
-            <Link to="/admin/accommodations">Manage Accommodations</Link>
+            <Link to="/manageAccommodations">Manage Accommodations</Link>
           </li>
           <li>
-            <Link to="/admin/transportations">Manage Transportations</Link>
+            <Link to="/ManageTransport">Manage Transportations</Link>
           </li>
           <li>
-            <Link to="/admin/activities">Manage Activities</Link>
+            <Link to="/manageActivities">Manage Activities</Link>
           </li>
           <li>
-            <Link to="/admin/bookings">Manage Bookings</Link>
+            <Link to="/manageBookings">Manage Bookings</Link>
           </li>
           <li>
-            <Link to="/admin/plans">Manage Plans</Link>
+            <Link to="/managePlans">Manage Plans</Link>
           </li>
           <li>
-            <Link to="/admin/reviews">Manage Reviews</Link>
+            <Link to="/manageReviews">Manage Reviews</Link>
           </li>
           <li>
             <Link to="/admin/payments">Manage Payments</Link>
